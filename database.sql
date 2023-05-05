@@ -1,5 +1,11 @@
 DROP DATABASE IF EXISTS bazasait;
 CREATE DATABASE bazasait;
 USE bazasait;
-CREATE TABLE users(id INT, username VARCHAR(255), password VARCHAR(255));
-INSERT INTO users VALUES (1, "admin", "admin");
+CREATE TABLE potrebiteli(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(255),
+	pass VARCHAR(255)
+);
+INSERT INTO potrebiteli VALUES
+	(1, "admin", "admin"),
+	(2, "usr", "u");
